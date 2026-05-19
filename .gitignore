@@ -1,0 +1,24 @@
+# Build
+bin/
+obj/
+
+# IDE
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Local env secrets
+.env
+IDelivery/.env
+
+# Databases
+*.db
+*.db-shm
+*.db-wal
+
+# OS
+Thumbs.db
+.DS_Store
