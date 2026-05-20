@@ -106,22 +106,4 @@ Swagger:
 dotnet test IDelivery.Tests/IDelivery.Tests.csproj --no-restore
 ```
 
-## Segurança (mínimo)
 
-- Não commitar `.env`
-- Não usar credenciais default em produção
-- Rotacionar `Jwt__Key`
-- Ativar HTTPS/reverse proxy e observabilidade
-- Evoluir para migrations versionadas e política de secrets (Vault/KeyVault/Secrets Manager)
-
-## Situação para Git
-
-Pronto para versionar como base de desenvolvimento, com:
-- build passando
-- testes passando
-- `.gitignore` e `.env.example` adicionados
-
-Antes de produção, evoluir:
-- migrations EF oficiais
-- validação formal de entrada (FluentValidation)
-- políticas de autorização por ownership (resource-based)
